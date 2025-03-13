@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+        (function(){
+            emailjs.init("Vrfe_vDchmCpWbsEc"); // Replace with your EmailJS Public Key
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Rutika <span>Das</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi! My Name is <span>Rutika </span></h1>
+            <h3 class="text-animation">I Am a <span>Web Developer</span></h3>
+            <p>I am a passionate web developer skilled in HTML, CSS, and JavaScript. I specialize in building interactive and responsive web applications.</p>
+            <h1 id="greeting"></h1>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rutika-das-7691b2306">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="https://www.github.com/rutika003">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.facebook.com/pini.das.944">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/pini_003 ">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="My_CV_Rutika.pdf" download class="btn">Download CV📄</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="profile.jpg" alt="Profile Image">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profile.jpg" alt="profile Image">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>Hello guyzz! I am a Web Developer Intern with a strong foundation in HTML, CSS and JavaScript.
+                I am passionate about building interactive, user-friendly, and efficient web applications.
+                I am,currentlyenhancing my skills by working on real-world projects, problem-solving, and 
+                learning best industry practices. My focus is on responsive web design, performance optimization,
+                and creating seamless user experiences. </p>
+            </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bxl-html5"></i>
+                    <h4>HTML</h4>
+                    <div class="progress-bar" style="width: 90%">
+                        <div class="progress html">90%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bxl-css3"></i>
+                    <h4>CSS</h4>
+                    <div class="progress-bar" style="width: 85%">
+                        <div class="progress css">85%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bxl-javascript"></i>
+                    <h4>JavaScript</h4>
+                    <div class="progress-bar"style="width: 70%">
+                        <div class="progress javascript">70%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bxl-react"></i>
+                    <h4>React</h4>
+                    <div class="progress-bar"style="width: 60%">
+                        <div class="progress react">60%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-info">
+                    <i class="bx bxl-git"></i>
+                    <h4>Git & GitHub</h4>
+                    <div class="progress-bar" style="width: 85%;">
+                        <div class="progress git">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <section class="services" id="services">
+        <h2 class="heading"> Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p>Building responsive and interactive websites using HTML, CSS, JavaScript.
+                       Ensuring cross-browser compatibility and mobile-friendly design. 
+                       We Implement mobile-first design principles.
+                    </p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>Developing backend logic using Node.js & Express.js.
+                       Working with databases like MongoDB, Firebase, or SQL.
+                    </p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Web Application Debugging & Testing</h4>
+                    <p>Fixing bugs in HTML, CSS, JavaScript, and React.
+                       Conducting browser testing & debugging using DevTools.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="top-header">
+            <h1>Projects</h1>
+        </div>
+        <div class="project-list">
+            <div class="project" data-category="web">
+                <a href="#" target="_blank">Web Project 1</a>
+            </div>
+            <div class="project" data-category="web">
+                <a href="#" target="_blank">Mobile Project 2</a>
+            </div>
+            <div class="project" data-category="mobile">
+                <a href="#" >UI/UX Project 1</a>
+            </div>
+            <div class="project" data-category="mobile">
+                <a href="#">Web Project 2</a>
+            </div>
+            <div class="project" data-category="uiux">
+                <a href="#">Mobile Project 1</a>
+            </div>
+            <div class="project" data-category="uiux">
+                <a href="#">UI/UX Project 2</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contactForm">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Full Name">
+                    <small class="error-message"></small>
+    
+                    <input type="email" id="email" placeholder="Email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="phone" placeholder="Phone Number" maxlength="10">
+                    <small class="error-message"></small>
+    
+                    <input type="text" id="subject" placeholder="Subject">
+                    <small class="error-message"></small>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <small class="error-message"></small>
+    
+                <input type="submit" value="Send Message" class="btn" id="submitBtn" disabled>
+            </div>
+        </form>
+    </section>    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            @ Rutika Das | All Rights Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
